@@ -1,9 +1,6 @@
 import { useState } from 'react'
-//import { useInput } from './../hooks/useInput'
 
 export const FormLogin = () => {
- // const username = useInput({ type: 'text' })
-  //const password = useInput({ type: 'password' })
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
@@ -37,7 +34,7 @@ export const FormLogin = () => {
         />
       </div>
       <div className="form_login_input_group">
-        <label htmlFor="password">Contrasena</label>
+        <label htmlFor="password">Contraseña</label>
         <input 
           name="password"
           type="password"
@@ -46,7 +43,7 @@ export const FormLogin = () => {
         />
       </div>
       <div className="form_login_button">
-        <button onClick={handleClick}>Iniciar Sesion</button>
+        <button onClick={handleClick}>Iniciar Sesión</button>
       </div>
     </div>
   )
